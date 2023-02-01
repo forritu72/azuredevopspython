@@ -9,7 +9,7 @@ az webapp create --resource-group pythonwebappnaveen --plan pythonwebappplannave
 
 git init
 
-$ git clone url
+git clone url
 
 git add .
 
