@@ -1,0 +1,34 @@
+az group create --name pythonwebappnaveen --location westus
+
+az appservice plan create --resource-group pythonwebappnaveen --name pythonwebappplannaveen --is-linux --sku B1
+
+az webapp create --resource-group pythonwebappnaveen --plan pythonwebappplannaveen --name pythonwebappsnaveen --runtime "Python|3.7"
+
+git init
+
+git clone https://github.com/swaydevstan/pythonwebapp.git
+
+git add .
+
+git commit -m 'First commit'
+
+git status
+
+git branch
+
+git remote
+
+git remote add alias url
+
+git remote add remotetest https://github.com/forritu72/azuredevopspython.git
+
+git remote
+
+git push alias branch
+
+git push remotetest master
+
+
+https://swaydevstan.medium.com/deploy-a-python-web-app-using-azure-devops-d556a129164e
+
+https://medium.com/bb-tutorials-and-thoughts/how-to-build-ci-cd-for-python-azure-functions-using-azure-devops-7087a76e535b
